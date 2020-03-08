@@ -1,0 +1,20 @@
+<mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>{{ card.questionText }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div *ngIf="hideAnswer" class="question">
+            <img src="{{ card.questionImage }}" class="image">
+        </div>
+        <div *ngIf="!hideAnswer" class="answer">
+            <p class="code">{{ card.answerCode }}</p>
+            <p>{{ card.answerDescription }}</p>
+            <p>{{ card.answerIncluding }}</p>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="backClicked()">Back</button>
+      <button mat-flat-button (click)="hideAnswer=!hideAnswer" color="primary">See Answer</button>
+      <button mat-button (click)="nextClicked()">Next</button>
+    </mat-card-actions>
+  </mat-card>

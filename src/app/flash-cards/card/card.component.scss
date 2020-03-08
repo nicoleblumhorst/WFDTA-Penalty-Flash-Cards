@@ -1,0 +1,36 @@
+.card {
+    width: 80vw;
+    
+    .image{
+        max-width: 70vw;
+    }
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+
+    .code {
+        text-align: center;
+        font-size: xx-large;
+        padding: 10px;
+        background-color: lightgray;
+        color: black;
+        border-radius: 25px;
+    }
+}
+
+.mat-card-content {
+    height: 50vh;
+    
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+}
+
+mat-card-actions {
+    display: flex;
+    justify-content: space-between;
+}
