@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "wftda-flash-cards",
+      "public": "dist/wftda-flash-cards",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

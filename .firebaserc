@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "penalty-flash-cards": {
+      "hosting": {
+        "wftda-flash-cards": [
+          "penalty-flash-cards"
+        ]
+      }
+    }
+  }
+}
